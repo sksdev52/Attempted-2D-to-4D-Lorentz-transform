@@ -84,7 +84,7 @@ def lnz_back_transform_matrix_2D(beta_gamma = []): #arguments = gamma and beta, 
 bg = get_beta_gamma (tvl, receding = True)
 print("Beta, Gamma (Receding = True), along direction of motion: ", bg)
 lft = lnz_back_transform_matrix_2D(bg) # Lorentz forward transform
-uv_dir_m = [[1,0],[0,1]] #Unit vectors along direction of motion
+uv_dir_m = [[1,0],[0,1]] # Spacetime vector of [unit time + unit distance] along the direction of morion
 
 trsuv= [] # transformed unit vectors distance
 for e in range (len(lft)):
